@@ -5,6 +5,18 @@
         .title_font{
             font-family: 'Playfair Display', serif;
         }
+
+        .nounderline{
+            text-decoration: none !important
+        }
+
+        .title_color{
+            color: #60965d !important;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+        }
     </style>
 
     <meta charset="utf-8">
@@ -18,13 +30,97 @@
     </head>
     <body>
 {% comment %}         <div class="shadow p-3 mb-5 bg-white rounded"> {% endcomment %}
-        <h1 class="text-center title_font", serif>FROM THE MUSES</h1>
+        <a class="text-center title_font nounderline title_color" href="/"><h1>FROM THE MUSES</h1></a>
         <h4 class="font-weight-light text-center">A Searchable Database for Educators</h4>
 {% comment %}         </div> {% endcomment %}
         {% include 'navbar.html' %}
         {% block content%}
         replace me
         {% endblock %}
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4 fixed-bottom">
+
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Motivations</h5>
+                <p>A modern solution to outdated sites within academia.</p>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none pb-3">
+
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="/admin">Admin</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Footer Links -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">©2020
+            <a href="https://www.linkedin.com/in/zhu-brian/">Brian Zhu</a>
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
