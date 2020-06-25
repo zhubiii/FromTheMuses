@@ -10,3 +10,6 @@ class AboutPageView(TemplateView):
 
 class ContactPageView(TemplateView):
     template_name = 'pages/contact.html'
+
+class ErrorPageView(TemplateView):
+    template_name = 'pages/error.html'
