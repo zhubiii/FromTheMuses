@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&&jdho^miacl34rnz&=!_ow^^w24z2l9l4zr^3bj&70iwc53uj'
+SECRET_KEY = '23(t$q6t7rpo7emy#!!0aoe&#8zhk(%)k*g_8&zu%yc=d%we6x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'FromTheMuses.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+	'USER': 'dbmasteruser',
+	'PASSWORD': '.`<6I)IRnbxk{D*i.&>PD80eZbjN)(5s',
+	'HOST': 'ls-bd3fb35de6e0444cbad01daa7f0290300bf18ef6.culciieijpud.us-east-2.rds.amazonaws.com',
+	'PORT': '5432',
     }
 }
 
@@ -124,4 +128,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "src/static"),
 ]
