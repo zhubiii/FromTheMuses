@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
+from register.views import register_form_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('pages.urls'))
+    path('',include('pages.urls')),
+    path('register/',include('register.urls')),
+    path('',include("django.contrib.auth.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

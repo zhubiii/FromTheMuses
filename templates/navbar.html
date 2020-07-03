@@ -49,7 +49,11 @@
       </li>
       </li>
     </ul>
-    <a class="nav-link mr-3 title_color" href="/about">About</a>
+    {% if user.is_authenticated %}
+      <a type="button" class="btn btn-outline-success mr-3" href="/about">View Profile</a>
+    {% else %}
+      <a type="button" class="btn btn-outline-success mr-3" href="/login">Login/Register</a>
+    {% endif %}
     <form class="form-inline my-2 my-lg-0 mr-4 pr-5">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

@@ -13,3 +13,6 @@ class ContactPageView(TemplateView):
 
 class ErrorPageView(TemplateView):
     template_name = 'pages/error.html'
+
+class LoggedOutPageView(TemplateView):
+    template_name = 'pages/logged_out.html'
