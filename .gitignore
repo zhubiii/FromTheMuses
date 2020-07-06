@@ -4,3 +4,4 @@ lib/
 share/
 FromTheMuses/settings.py
 db.sqlite3
+media

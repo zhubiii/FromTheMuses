@@ -92,11 +92,19 @@
         <title> From the Muses </title>
     </head>
     <body>
-{% comment %}         <div class="shadow p-3 mb-5 bg-white rounded"> {% endcomment %}
         <a class="text-center title_font nounderline title_color" href="/"><h1>FROM THE MUSES</h1></a>
         <h4 class="font-weight-light text-center">A Searchable Database for Educators</h4>
-{% comment %}         </div> {% endcomment %}
+
         {% include 'navbar.html' %}
+
+        {% if messages %}
+        {% for message in messages %}
+        <ul class="text-center alert alert-{{message.level_tag}}">
+        {{ message }}
+        </ul>
+        {% endfor %}
+        {% endif %}
+        
         {% block title %}
         {% endblock %}
         {% block content%}

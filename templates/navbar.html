@@ -1,5 +1,5 @@
-<div class="shadow-lg p-1 mb-5 bg-white rounded border-light">
-<nav class="navbar sticky-top navbar-expand-sm navbar-light style="background-color: #ffffff"">
+{% comment %} <div class="shadow-lg p-1 mb-5 bg-white rounded border-light"> {% endcomment %}
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #f0f5f1">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -53,12 +53,12 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Myth</a>
-          <a class="dropdown-item" href="#">Imperial</a>
+          <a class="dropdown-item" href="#">Politics</a>
           <a class="dropdown-item" href="#">Daily Life</a>
+          <a class="dropdown-item" href="#">Military</a>
+          <a class="dropdown-item" href="#">Funerary</a>
           <a class="dropdown-item" href="#">Ritual</a>
           <a class="dropdown-item" href="#">Decorative</a>
-          <a class="dropdown-item" href="#">Military & War</a>
-          <a class="dropdown-item" href="#">Death & Burial</a>
         </div>
       </li>
       </li>
@@ -66,7 +66,7 @@
     {% if user.is_authenticated %}
       <form class="form-inline">
       <button type="button" class="btn btn-success mr-3">Upload an Image</button>
-       <a type="button" class="btn btn-sm btn-outline-secondary mr-3" href="/about">View Profile</a>
+       <a type="button" class="btn btn-sm btn-outline-secondary mr-3" href="/profiles/{{ user.username }}">View Profile</a>
       </form>
     {% else %}
       <a type="button" class="btn btn-outline-success mr-3" href="/login">Login/Register</a>
@@ -82,4 +82,4 @@
     </div>
   </div>
 </nav>
-</div>
+{% comment %} </div> {% endcomment %}
