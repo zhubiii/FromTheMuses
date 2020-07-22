@@ -19,7 +19,7 @@ class LoggedOutPageView(TemplateView):
     template_name = 'pages/logged_out.html'
 
 class MuseumsPageView(TemplateView):
-    template_name = 'pages/meseums.html'
+    template_name = 'pages/museums.html'
 
 class GlossaryPageView(TemplateView):
     template_name = 'pages/glossary.html'
