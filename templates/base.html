@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html>
     <head>
     <style type="text/css">
@@ -84,13 +85,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--title font link-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    
+
+    <!--gallery style links
+<link rel="stylesheet" type="text/css" href="{% static 'gallery/css/gallery_template.css' %}">	
+<link rel="stylesheet" type="text/css" href="{% static 'gallery/css/gallery.css' %}">
+<link rel="stylesheet" type="text/css" href="{{ theme_css_path }}">
+    -->
     <!-- font awesome kit code -->
     <script src="https://kit.fontawesome.com/55b8b7aa78.js" crossorigin="anonymous"></script>
 
-        <title> From the Muses </title>
+        <title>{% block title %} From the Muses {% endblock %}</title>
     </head>
     <body>
         <a class="text-center title_font nounderline title_color" href="/"><h1>FROM THE MUSES</h1></a>
@@ -106,11 +115,11 @@
         {% endfor %}
         {% endif %}
         
-        {% block title %}
-        {% endblock %}
+	<div id="content">
         {% block content%}
         replace me
         {% endblock %}
+	</div>
 
         <!-- Footer -->
         <footer class="footer font-small blue pt-4 sticky-bottom">
