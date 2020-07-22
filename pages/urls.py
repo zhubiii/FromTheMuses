@@ -6,6 +6,8 @@ from .views import (
     ContactPageView,
     ErrorPageView,
     LoggedOutPageView,
+    MuseumsPageView,
+    GlossaryPageView,
 )
 
 app_name = 'pages'
@@ -15,5 +17,7 @@ urlpatterns = [
     path('about',AboutPageView.as_view(),name='about'),
     path('contact',ContactPageView.as_view(),name='contact'),
     path('error',ErrorPageView.as_view(),name='error'),
-    path('goodbye',LoggedOutPageView.as_view(),name='goodbye')
+    path('goodbye',LoggedOutPageView.as_view(),name='goodbye'),
+    path('museums',MuseumsPageView.as_view(),name='museums'),
+    path('glossary',GlossaryPageView.as_view(),name='glossary'),
 ]
