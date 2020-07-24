@@ -2,10 +2,12 @@
 
 {% load crispy_forms_tags %}
 {% block content %}
+<div class="card border-0 mx-auto my-3" style="width: 50rem;">
 <form method="POST" class="mx-5 px-5 mt-3 form-group">
     {% csrf_token %}
     {{form|crispy}}
     <button type="submit" class="btn btn-success">Login</button>
     <p>Not signed up yet? Create an account <a class="text-greenlink" href="/register">here</a>!</p>
 </form>
+</div>
 {% endblock%}
