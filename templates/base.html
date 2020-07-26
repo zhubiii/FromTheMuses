@@ -104,6 +104,8 @@
     <script src="https://kit.fontawesome.com/55b8b7aa78.js" crossorigin="anonymous"></script>
 
         <title>{% block title %} From the Muses {% endblock %}</title>
+
+	{% block header %} {% endblock %}
     </head>
     <body>
         <a class="text-center title_font nounderline title_color" href="/"><h1>FROM THE MUSES</h1></a>
@@ -119,8 +121,6 @@
         {% endfor %}
         {% endif %}
         
-	{%block header %}
-	{% endblock %}
 	<div id="content">
         {% block content%}
         replace me

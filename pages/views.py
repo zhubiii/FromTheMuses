@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+from django.contrib.messages.views import SuccessMessageMixin
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -15,7 +16,8 @@ class ContactPageView(TemplateView):
 class ErrorPageView(TemplateView):
     template_name = 'pages/error.html'
 
-class LoggedOutPageView(TemplateView):
+class LoggedOutPageView(SuccessMessageMixin, TemplateView):
+    success_message = 'You have successfully logged out!'
     template_name = 'pages/logged_out.html'
 
 class MuseumsPageView(TemplateView):
