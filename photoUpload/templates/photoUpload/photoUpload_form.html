@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% if user.is_authenticated %}
+<div class="card border-0 mx-auto my-3" style="width: 60rem;">
+    <form method="POST" class="mx-5 px-5 mt-3 form-group">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success">Upload</button>
+    </form>
+</div>
+{% else %}
+<h2 class="title_color title_font">Please sign in or register to upload an image</h2> 
+{% endif %}
+{% endblock %}
