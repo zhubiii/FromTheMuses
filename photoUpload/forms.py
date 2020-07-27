@@ -1,7 +1,7 @@
 from django import forms
 from gallery.models import Image
 
-class ImageUploadForm(forms.form):
+class PhotoUploadForm(forms.ModelForm):
     
     class Meta:
         model = Image
@@ -9,6 +9,7 @@ class ImageUploadForm(forms.form):
             'title',
             'date',
             'culture',
+            'period_prefix',
             'period',
             'object_type',
             'vase_technique',

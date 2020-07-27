@@ -26,7 +26,7 @@ urlpatterns = [
     path('',include("django.contrib.auth.urls")),
     path('profiles/',include('profiles.urls')),
     path('albums/',include('gallery.urls')),
-    path('imageUpload/',include('imageUpload.urls'))
+    path('photoUp/',include('photoUpload.urls'))
 ]
 
 if settings.DEBUG:

@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import image_upload_form_view
+from .views import PhotoCreate
 
-app_name = 'imageUpload'
+app_name = 'photoUpload'
 urlpatterns = [
-    path('', image_upload_form_view, name='ImageUpload-form'),
+    path('', PhotoCreate.as_view(), name='PhotoUpload-form'),
 ]
