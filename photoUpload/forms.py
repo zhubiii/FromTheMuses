@@ -8,9 +8,9 @@ class PhotoUploadForm(forms.ModelForm):
         fields = [
             'title',
             'date',
-            'culture',
             'period_prefix',
             'period',
+            'culture',
             'object_type',
             'vase_technique',
             'vase_shape',
