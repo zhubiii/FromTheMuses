@@ -23,6 +23,7 @@ class PhotoUploadForm(forms.ModelForm):
             'artist_or_attribution',
             'country',
             'associated_building',
+            'associated_site',
             'subject',
             'description',
             'museum_collection',
