@@ -3,6 +3,7 @@ from gallery.models import Image
 
 class PhotoUploadForm(forms.ModelForm):
     date = forms.CharField(
+        label='Specific Date(s)',
         required=False,
         widget=forms.TextInput(attrs={'placeholder': 'e.g. 142 CE, 420-410 BCE, 2nd century BCE','name': 'Specific Date(s)'})
     )
@@ -27,3 +28,4 @@ class PhotoUploadForm(forms.ModelForm):
             'museum_collection',
             'data',
         ]
+        labels = {'date': 'Specific Date(s)'}
