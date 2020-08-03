@@ -1,5 +1,5 @@
 # FromTheMuses
-
+www.fromthemuses.org
 ## Motivation
 Educators, at both higher education and secondary education instituions, often utilize searchable databases that allow them to quickly find reliable content to present in lecture/class. Dr. Ann Morgan, an educator and archaeologist, found that the databases that currently exist, specifically in the realm of classics studies and archaeology, are outdated and difficult to use. This project serves to be a modern solution to supply the unmet demand of what educators expect today.
 
