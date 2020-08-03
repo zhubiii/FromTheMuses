@@ -2,21 +2,25 @@ from django import forms
 from gallery.models import Image
 
 class PhotoUploadForm(forms.ModelForm):
-    
+    date = forms.CharField(
+        required=False,
+        widget=forms.TextInput(attrs={'placeholder': 'e.g. 142 CE, 420-410 BCE, 2nd century BCE','name': 'Specific Date(s)'})
+    )
+
     class Meta:
         model = Image
         fields = [
             'title',
             'date',
-            'period_prefix',
             'period',
+            'period_prefix',
             'culture',
             'object_type',
             'vase_technique',
             'vase_shape',
             'material',
-            'country',
             'artist_or_attribution',
+            'country',
             'associated_building',
             'subject',
             'description',
