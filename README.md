@@ -9,6 +9,7 @@ https://www.beazley.ox.ac.uk/antiquaria/default.htm
 
 ## Design & Implementation
 ***This project was done using Django, Python, Bootstrap, and HTML to integrate a PostgreSQL database through Amazon's AWS cloud services***  
+### Initial Design Proccess
 The first steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement HTML pages to present at the following weeks meeting. 
 
 First client markups             |  Implementation of client's design
