@@ -7,6 +7,14 @@ Educators, at both higher education and secondary education instituions, often u
 http://ancientrome.ru/art/artworken/art-search-e.htm  
 https://www.beazley.ox.ac.uk/antiquaria/default.htm
 
+## Design & Implementation
+***This project was done using Django, Python, Bootstrap, and HTML to integrate a PostgreSQL database through Amazon's AWS cloud services***  
+The first steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement HTML pages to present at the following weeks meeting. 
+
+First client markups             |  Implementation of client's design
+:-------------------------:|:-------------------------:
+<img src="docImages/homepage_design.png" alt="first markup of homepage UI" height="300" width="500" /> | <img src="docImages/homepage.png" alt="implemented markup of homepage" width="500" height="300"/>
+
 ## Credits
 This project was envisioned and directed by Dr. Ann Morgan <morgan.ann@gmail.com> | <fromthemuses.db@gmail.com>  
 All of the code and implementation was done by Brian Zhu, begining in the summer of 2020 as a rising junior at Lehigh University <blz222@lehigh.edu> | www.linkedin.com/in/zhu-brian/
