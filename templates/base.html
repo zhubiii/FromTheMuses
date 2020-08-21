@@ -7,6 +7,10 @@
             font-family: 'Playfair Display', serif;
         }
 
+        .p_font{
+            font-family: 'Raleway', sans-serif;
+        }
+
         .nounderline{
             text-decoration: none !important
         }
@@ -88,6 +92,62 @@
           content: "\f002";
         }
 
+	@media (min-width: 768px) {
+
+    	.container-small {
+
+        	width: 400px !important;
+
+    	}
+
+    	.container-large {
+
+        	width: 970px !important;
+
+    	} 
+
+	} 
+
+	@media (min-width: 992px) {
+
+    	.container-small {
+
+        	width: 600px !important;
+
+    	}
+
+    	.container-large {
+
+        	width: 1170px !important;
+
+    	} 
+
+	} 
+
+	@media (min-width: 1200px) {
+
+    	.container-small {
+
+        	width: 800px !important;
+
+    	}
+
+    	.container-large {
+
+        	width: 1500px !important;
+
+    	} 
+
+	}
+
+
+
+	.container-small, .container-large {
+
+    		max-width: 100% !important;
+
+	}
+
     </style>
 
     <meta charset="utf-8">
@@ -98,6 +158,7 @@
 
     <!--title font link-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
     <!--gallery style links
 <link rel="stylesheet" type="text/css" href="{% static 'gallery/css/gallery_template.css' %}">	
@@ -113,7 +174,7 @@
     </head>
     <body class="overflow-auto">
         <a class="text-center title_font nounderline title_color" href="/"><h1>FROM THE MUSES</h1></a>
-        <h4 class="font-weight-light text-center">A Searchable Database for Educators</h4>
+        <h4 class="font-weight-lighter text-center">A Searchable Database for Educators</h4>
 
         {% include 'navbar.html' %}
 
