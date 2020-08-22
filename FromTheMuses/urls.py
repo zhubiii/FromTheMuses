@@ -26,7 +26,8 @@ urlpatterns = [
     path('',include("django.contrib.auth.urls")),
     path('profiles/',include('profiles.urls')),
     path('albums/',include('gallery.urls')),
-    path('photoUp/',include('photoUpload.urls'))
+    path('photoUp/',include('photoUpload.urls')),
+    path(r'comments/', include('django_comments_xtd.urls')),
 ]
 
 if settings.DEBUG:
