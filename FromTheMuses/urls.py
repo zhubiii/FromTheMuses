@@ -30,6 +30,7 @@ urlpatterns = [
     path('photoUp/',include('photoUpload.urls')),
     path(r'comments/', include('django_comments_xtd.urls')),
     path(r'jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+    path('hitcount/', include(('hitcount.urls', 'hitcount'), namespace='hitcount')),
 ]
 
 if settings.DEBUG:
