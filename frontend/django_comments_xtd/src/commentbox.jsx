@@ -214,7 +214,6 @@ export class CommentBox extends React.Component {
     
     return (
       <div>
-        {comment_counter}
         {comment_form}
         {update_alert}
         <div className="comment-tree">
