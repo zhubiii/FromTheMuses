@@ -76,8 +76,8 @@ export class CommentBox extends React.Component {
           return <div dangerouslySetInnerHTML={{__html: elem.innerHTML}} />;
         else
           return (
-            <h5 className="mt-4 mb-5 text-center text-info">
-              Only registered users can post comments.
+            <h5 className="mt-4 mb-5 text-center">
+              Only registered users can post comments. Please <a class="text-greenlink" href="/login/?next={{ object.get_absolute_url }}">login</a> or <a class="text-greenlink" href="/register/?next={{ object.get_absolute_url }}">register</a>
            </h5>
           );
       }
