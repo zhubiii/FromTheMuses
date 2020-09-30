@@ -20,7 +20,20 @@ included social media aspects (custom user profiles, comment sections) and user 
 From an administrator and maintainer point of view, we defined essential properties of the database that would allow information to be maintained and upheld to an academic 
 standard. Administrators needed to be able to filter and approve images/information before it is visible on the website. This prevents inappropiate content and allows
 information to be fact-checked upon user upload. Administrators should also be able to customize which photos go into which album, and be able to customize which albums are 
-featured to the user on the homepage. 
+featured to the user on the homepage.
+
+### Product Architecture/Planned Implementation
+Using what we defined in our requirements specification, we then proceeded to talk about the architecture and technologies that would be used to develop the product.  
+<img src="docImages/User_diagrams.png" />  
+Knowing what the flow of our user/admin model was, we had to answer questions such as: How will this be hosted? What are our options? What is the price? What
+frameworks/technologies/programming languages would be best?  
+Since my client did not have any technical background in software development or web development, it was my job to research the current tools that modern database websites 
+use and present them to my client in a way that is both fiscally and functionally understandable.  
+Upon research, I discovered that the Django Framework is a very fast, modular way to deploy ideas which are heavily entangled with databases. Django is also used through 
+Python, which is a relatively easy and powerful language to use. Next I had to research ways to host the site, services existed such as AWS, Microsoft Azure, Google Cloud,
+Digital Ocean, and more. I put together a presentation on each of the services, detailing the short term and long term cost, included features (storage, processing, customer support), and long-term transferability (when I am no longer the lead of the project, is it easy to hand off to the next developer). In the end, we decided to use AWS for their
+integrated ecosystem, meaning that we can use storage, databases, network traficking, all through the same platform, the cost, and the high use of AWS in industry already.
+
 ### Initial Design Proccess
 The first steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement the requested pages to present at the following weeks meeting. 
 
