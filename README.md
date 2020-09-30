@@ -35,12 +35,21 @@ Digital Ocean, and more. I put together a presentation on each of the services, 
 integrated ecosystem, meaning that we can use storage, databases, network traficking, all through the same platform, the cost, and the high use of AWS in industry already.
 
 ### Initial Design Proccess
-The first steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement the requested pages to present at the following weeks meeting. 
+The next steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement the requested pages to present at the following weeks meeting. 
 
 First client markups             |  Implementation of client's design
 :-------------------------:|:-------------------------:
 <img src="docImages/homepage_design.png" alt="first markup of homepage UI" height="300" width="500" /> | <img src="docImages/homepage.png" alt="implemented markup of homepage" width="500" height="300"/>
 <img src="docImages/landing_page_mockup.png" alt="first markup of landing page UI" height="300" width="500" /> | <img src="docImages/landing_page.png" alt="implemented markup of landing page" width="500" height="300"/>
+
+### Testing/Deployment/Maintenance
+Instead of waiting until the final product was done to release it, I instead made the decision to do a continuous deployment approach. This "Agile" like mindset, has many pros 
+which include getting user/client feedback in steps, being able to make changes along the way that won't lead to a dependency nightmare, and keeping stakeholders happy 
+by allowing them to see the progress made each week.  
+  
+Currently this project is in the latter half of the software development lifecycle as I am working still to push, test, and integrate features into the site. We have been able 
+to get lots of user feedback and fix issues along the way.
+
 
 ## Credits
 This project was envisioned and directed by Dr. Ann Morgan <morgan.ann@gmail.com> | <fromthemuses.db@gmail.com>  
