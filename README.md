@@ -15,6 +15,7 @@ The first steps of tackling this project were to map out, conceptually, what the
 First client markups             |  Implementation of client's design
 :-------------------------:|:-------------------------:
 <img src="docImages/homepage_design.png" alt="first markup of homepage UI" height="300" width="500" /> | <img src="docImages/homepage.png" alt="implemented markup of homepage" width="500" height="300"/>
+<img src="docImages/landing_page_mockup.png" alt="first markup of landing page UI" height="300" width="500" /> | <img src="docImages/landing_page.png" alt="implemented markup of landing page" width="500" height="300"/>
 
 ## Credits
 This project was envisioned and directed by Dr. Ann Morgan <morgan.ann@gmail.com> | <fromthemuses.db@gmail.com>  
