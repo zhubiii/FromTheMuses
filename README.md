@@ -8,7 +8,19 @@ http://ancientrome.ru/art/artworken/art-search-e.htm
 https://www.beazley.ox.ac.uk/antiquaria/default.htm
 
 ## Design & Implementation
-***This project was done using Django, Python, Bootstrap, and HTML to integrate a PostgreSQL database through Amazon's AWS cloud services***  
+***This project was done using Django, Python, Bootstrap, and HTML to integrate a PostgreSQL database through Amazon's AWS cloud services***
+### Functional Baselines: Defining Requirements
+The first things discussed with the client were what exactly the end product was and needed to do. She described that this project is meant to be an updated and modern 
+solution to outdated databases that exist within in this subsector of academia. We then defined who our target users are and what their needs are going to be.
+We determined that we would mainly be targeting educators and professors within academia. The normal use case from a user-end point of view would be to easily go on the website 
+and not only search/filter for specific images that they desire, but also to freely browse and discover new objects and information. More specifically, being able to
+efficiently find the images they desired without being overwhelmed with too much information, a sleek design was an absolute necessity. Other features that were requested 
+included social media aspects (custom user profiles, comment sections) and user uploaded images/information.
+  
+From an administrator and maintainer point of view, we defined essential properties of the database that would allow information to be maintained and upheld to an academic 
+standard. Administrators needed to be able to filter and approve images/information before it is visible on the website. This prevents inappropiate content and allows
+information to be fact-checked upon user upload. Administrators should also be able to customize which photos go into which album, and be able to customize which albums are 
+featured to the user on the homepage. 
 ### Initial Design Proccess
 The first steps of tackling this project were to map out, conceptually, what the ideal final product would look like. The client, Dr. Ann Morgan, and I would meet once a week where she would provide sketches for each desired page of the website. From there I would implement the requested pages to present at the following weeks meeting. 
 
